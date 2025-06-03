@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Microsoft XDR Connectors" id="connector-diagram">
+    <mxGraphModel dx="1120" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Sentinel Core -->
+        <mxCell id="sentinel" value="Microsoft Sentinel" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D0E3FA;strokeColor=#2A5885;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors -->
+        <mxCell id="mde" value="MDE&#xa;(Endpoint Alerts)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="180" y="250" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="mdi" value="MDI&#xa;(AD Monitoring)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="180" y="100" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="mdo" value="MDO&#xa;(Email Threats)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="140" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="mdca" value="MDCA&#xa;(Cloud App Control)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="100" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="aad" value="Entra ID&#xa;(Sign-ins &amp; Risk)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="250" width="160" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="audit" value="Unified Audit Log&#xa;(O365 Activity)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3E3E3;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="mde" target="sentinel"/>
+        <mxCell style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="mdi" target="sentinel"/>
+        <mxCell style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="mdo" target="sentinel"/>
+        <mxCell style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="mdca" target="sentinel"/>
+        <mxCell style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="aad" target="sentinel"/>
+        <mxCell style="endArrow=block;strokeWidth=2;" edge="1" parent="1" source="audit" target="sentinel"/>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
